@@ -20857,7 +20857,7 @@ const km = [
       [ot, Et] = Ot.useState(null),
       Ht = Ot.useRef(null);
     Ot.useEffect(() => {
-      fetch("/seemerced2/detailed_failed.json")
+      fetch("./detailed_failed.json")
         .then((q) => q.json())
         .then((q) => {
           if (!q || !q.labels || !q.classes) {
@@ -20869,7 +20869,7 @@ const km = [
         .catch((q) => console.error("Error loading detailed_failed.json:", q));
     }, []),
       Ot.useEffect(() => {
-        fetch("/seemerced2/course_abbreviations.json")
+        fetch("./course_abbreviations.json")
           .then((q) => q.json())
           .then((q) => {
             const lt = {};
